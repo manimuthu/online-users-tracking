@@ -13,5 +13,10 @@ In this script I have used dummy users list, you have to replace that part with 
 
 # Getting Started
 
-Just include the `send-request.php` in the footer of your application file and the this script will start work on your website.
+Just include the `send-request.php` in the footer of your application file and this script will start work on your website.
 Make sure there is a read/write permission for your PHP application to the flat file `online-users.txt`
+
+update the session value in `store-users.php` and pass your users unique value to this.
+Based on this value, query your users master at `fetch-users.php`
+
+In `view-users.php` every minute you can see the updated list of users. Here I have used one minute delay to request the server
